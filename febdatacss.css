@@ -1,16 +1,43 @@
-h1 {
-    width: fit-content;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: blue;background-color: chartreuse;
-    font-size: x-large;
-    text-align: right;
-    } 
+.header{
+    border-width: 5px;
+    border-style: double;
+    border-color: deeppink;
+    width: 500px;
+}
+@media screen and (max-width: 768px) {
+    .header {
+        width: 768px;
+        border-color: darkred;
+    }
+}
+@media screen and (max-width: 320px) {
+    .header {
+        width: 320px;
+        border-color: darkblue;
+    }
+}
 
-    h2 {
-        width: fit-content;
-        font-family: Arial, Helvetica, sans-serif;
-        color: chartreuse;
-        background-color: chocolate;
-        font-size: x-large;
-        text-align: left;
-        } 
+.flex{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.flex > div{
+    flex: 1;
+    padding: 100px;
+}
+
+h1{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+p{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+
+
